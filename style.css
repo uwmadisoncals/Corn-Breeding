@@ -5,7 +5,7 @@ Author: Carrie Meurer
 Author URI: http://underscores.me/
 Description: Description
 Version: 1.0.0
-Template:	enlightenment
+Template:	gravit
 
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
@@ -16,6 +16,9 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 */
+
+
+@import url("../gravit/style.css");
 
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
@@ -44,7 +47,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 /*--------------------------------------------------------------
 # Normalize
 --------------------------------------------------------------*/
-html {
+/*html {
 	font-family: sans-serif;
 	-webkit-text-size-adjust: 100%;
 	-ms-text-size-adjust:     100%;
@@ -263,7 +266,7 @@ th {
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
-body,
+/*body,
 button,
 input,
 select,
@@ -342,18 +345,18 @@ big {
 /*--------------------------------------------------------------
 # Elements
 --------------------------------------------------------------*/
-html {
+/*html {
 	box-sizing: border-box;
 }
 
 *,
 *:before,
-*:after { /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+*:after { 
 	box-sizing: inherit;
 }
 
 body {
-	background: #fff; /* Fallback for when there is no custom background color defined. */
+	background: #fff; 
 }
 
 blockquote:before,
@@ -403,8 +406,8 @@ dd {
 }
 
 img {
-	height: auto; /* Make sure images are scaled correctly. */
-	max-width: 100%; /* Adhere to container width. */
+	height: auto; 
+	max-width: 100%; 
 }
 
 table {
@@ -415,7 +418,7 @@ table {
 /*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/
-button,
+/*button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
@@ -491,7 +494,7 @@ textarea {
 /*--------------------------------------------------------------
 ## Links
 --------------------------------------------------------------*/
-a {
+/*a {
 	color: royalblue;
 }
 
@@ -517,7 +520,7 @@ a:active {
 /*--------------------------------------------------------------
 ## Menus
 --------------------------------------------------------------*/
-.main-navigation {
+/*.main-navigation {
 	clear: both;
 	display: block;
 	float: left;
@@ -591,7 +594,7 @@ a:active {
 }
 
 /* Small menu. */
-.menu-toggle,
+/*.menu-toggle,
 .main-navigation.toggled ul {
 	display: block;
 }
@@ -631,7 +634,7 @@ a:active {
 # Accessibility
 --------------------------------------------------------------*/
 /* Text meant only for screen readers. */
-.screen-reader-text {
+/*.screen-reader-text {
 	clip: rect(1px, 1px, 1px, 1px);
 	position: absolute !important;
 	height: 1px;
@@ -656,13 +659,13 @@ a:active {
 	text-decoration: none;
 	top: 5px;
 	width: auto;
-	z-index: 100000; /* Above WP toolbar. */
+	z-index: 100000; 
 }
 
 /*--------------------------------------------------------------
 # Alignments
 --------------------------------------------------------------*/
-.alignleft {
+/*.alignleft {
 	display: inline;
 	float: left;
 	margin-right: 1.5em;
@@ -684,7 +687,7 @@ a:active {
 /*--------------------------------------------------------------
 # Clearings
 --------------------------------------------------------------*/
-.clear:before,
+/*.clear:before,
 .clear:after,
 .entry-content:before,
 .entry-content:after,
@@ -712,16 +715,16 @@ a:active {
 /*--------------------------------------------------------------
 # Widgets
 --------------------------------------------------------------*/
-.widget {
+/*.widget {
 	margin: 0 0 1.5em;
 }
 
-/* Make sure select elements fit in widgets. */
+
 .widget select {
 	max-width: 100%;
 }
 
-/* Search widget. */
+
 .widget_search .search-submit {
 	display: none;
 }
@@ -732,7 +735,7 @@ a:active {
 /*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/
-.sticky {
+/*.sticky {
 	display: block;
 }
 
@@ -764,7 +767,7 @@ a:active {
 /*--------------------------------------------------------------
 ## Asides
 --------------------------------------------------------------*/
-.blog .format-aside .entry-title,
+/*.blog .format-aside .entry-title,
 .archive .format-aside .entry-title {
 	display: none;
 }
@@ -772,7 +775,7 @@ a:active {
 /*--------------------------------------------------------------
 ## Comments
 --------------------------------------------------------------*/
-.comment-content a {
+/*.comment-content a {
 	word-wrap: break-word;
 }
 
@@ -784,20 +787,20 @@ a:active {
 # Infinite scroll
 --------------------------------------------------------------*/
 /* Globally hidden elements when Infinite Scroll is supported and in use. */
-.infinite-scroll .posts-navigation, /* Older / Newer Posts Navigation (always hidden) */
-.infinite-scroll.neverending .site-footer { /* Theme Footer (when set to scrolling) */
+/*.infinite-scroll .posts-navigation, 
+.infinite-scroll.neverending .site-footer { 
 	display: none;
 }
 
 /* When Infinite Scroll has reached its end we need to re-display elements that were hidden (via .neverending) before. */
-.infinity-end.neverending .site-footer {
+/*.infinity-end.neverending .site-footer {
 	display: block;
 }
 
 /*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/
-.page-content .wp-smiley,
+/*.page-content .wp-smiley,
 .entry-content .wp-smiley,
 .comment-content .wp-smiley {
 	border: none;
@@ -807,7 +810,7 @@ a:active {
 }
 
 /* Make sure embeds and iframes fit their containers. */
-embed,
+/*embed,
 iframe,
 object {
 	max-width: 100%;
@@ -816,7 +819,7 @@ object {
 /*--------------------------------------------------------------
 ## Captions
 --------------------------------------------------------------*/
-.wp-caption {
+/*.wp-caption {
 	margin-bottom: 1.5em;
 	max-width: 100%;
 }
@@ -837,7 +840,7 @@ object {
 /*--------------------------------------------------------------
 ## Galleries
 --------------------------------------------------------------*/
-.gallery {
+/*.gallery {
 	margin-bottom: 1.5em;
 }
 
@@ -882,4 +885,4 @@ object {
 
 .gallery-caption {
 	display: block;
-}
+}*/
