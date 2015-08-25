@@ -886,17 +886,3 @@ object {
 .gallery-caption {
 	display: block;
 }*/
-
-/* ADDED BY CARRIE */
-
-.gallery a img, .gallery img { padding: 20px; } /* space around gallery images */
-
-.description { font-size: 26px; } /* bigger font for title */
-
-
-
-
-
-
-
-

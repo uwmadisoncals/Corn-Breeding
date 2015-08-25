@@ -24,18 +24,17 @@
 	<?php do_action( 'before' ); ?>
 	<header id="masthead" class="site-header" role="banner">
 		<div class="site-branding">
+			<?php if ( get_bloginfo( 'description' ) ) { ?>				
+				<h2 class="description">
+					<a href="'. home_url() .'"><?php bloginfo( 'description' ); ?></a>
+				</h2>				
+			<?php } ?>
 			<?php //show title or Header image
 			if ( get_header_image() ) { 
 				echo '<a href="'. home_url() .'"><img alt="'. esc_attr( get_bloginfo( 'name' ) ) .'" title="'. esc_attr( get_bloginfo( 'name' ) ) .'" class="header-image" src="' . esc_url( get_header_image() ) . '" /></a>';
 			} else { ?>
 				<h1 class="site-title"><a title="<?php bloginfo( 'name' ); ?>" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-			<?php } ?>			
-			
-			<?php if ( get_bloginfo( 'description' ) ) { ?>				
-				<h2 class="description">
-					<?php bloginfo( 'description' ); ?>
-				</h2>				
-			<?php } ?>
+			<?php } ?>	
 			</div>	  	
 
 			<nav id="site-navigation" class="main-navigation" role="navigation">
