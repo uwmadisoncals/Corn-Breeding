@@ -905,7 +905,8 @@ body {
 /* move breadcrumbs over */
 .breadcrumb { width: 1000px!important; }
 
-
+/* smaller footer text */
+.site-info { font-size: 13px; }
 
 
 
