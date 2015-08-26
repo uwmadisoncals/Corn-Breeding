@@ -886,3 +886,29 @@ object {
 .gallery-caption {
 	display: block;
 }*/
+
+/* ADDED BY CARRIE */
+
+.gallery a img, .gallery img { padding: 20px; } /* space around gallery images */
+
+/* bigger font for title, no link color, border, etc. */
+.description { font-size: 26px; margin-top: 20px; margin-bottom: 0px; border: none; } /* bigger font for title */
+.description a:link, .description a:active,.description a:visited, .description a:current { text-decoration: none; color: #4B4A47!important; }
+.header-image { padding-top: 0px; padding-bottom: 20px; width: 200px; }
+.site-branding { border-bottom: 1px solid #f5f5f5; }
+
+/* new font for all content */
+body {
+	font-family: "Cantarell", sans-serif;
+}
+
+/* move breadcrumbs over */
+.breadcrumb { width: 1000px; }
+
+
+
+
+
+
+
+
