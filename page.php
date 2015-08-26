@@ -14,7 +14,10 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-
+		 
+			 <!-- breadcrumbs -->
+			 <?php if(function_exists(simple_breadcrumb) && !is_front_page()) {simple_breadcrumb();} ?>
+			 
 			<?php while ( have_posts() ) : the_post(); ?>
 
 				<?php get_template_part( 'content', 'page' ); ?>

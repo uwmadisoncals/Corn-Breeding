@@ -44,8 +44,7 @@
 				
 			</nav><!-- #site-navigation -->
 			 
-			 <!-- breadcrumbs -->
-			 <?php if(function_exists(simple_breadcrumb) && !is_front_page()) {simple_breadcrumb();} ?>
+			 
 
 			 <!-- full width slider -->	
 					<?php if ( is_home() ):?>
