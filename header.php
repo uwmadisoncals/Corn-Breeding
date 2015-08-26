@@ -57,6 +57,11 @@
 							<h1 class="site-title"><a title="<?php bloginfo( 'name' ); ?>" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 						<?php } ?>
 					
+					<!-- full width slider -->	
+					<?php 
+    					echo do_shortcode("[metaslider id=360]"); 
+					?>
+						
 			</div>
 
 	  				<div id="menu-toggle">
