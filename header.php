@@ -45,7 +45,6 @@
 			</nav><!-- #site-navigation -->
 			 
 			 
-
 			 <!-- full width slider -->	
 					<?php if ( is_home() ):?>
     					echo do_shortcode("[metaslider id=360]"); 
