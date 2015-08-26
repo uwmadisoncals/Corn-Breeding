@@ -902,9 +902,6 @@ body {
 	font-family: "Cantarell", sans-serif;
 }
 
-/* move breadcrumbs over */
-.breadcrumb { width: 1000px; }
-
 
 
 
