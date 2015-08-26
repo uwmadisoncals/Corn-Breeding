@@ -903,7 +903,7 @@ body {
 }
 
 /* move breadcrumbs over */
-.breadcrumb { width: 1000px; }
+.breadcrumb { width: 1000px!important; }
 
 
 
