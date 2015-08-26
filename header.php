@@ -50,12 +50,7 @@
 
 		<div class="menu-mobile">
 			<div class="site-branding-mobile">
-						<?php //show title or Header image
-						if ( get_header_image() ) { 
-							echo '<a href="'. home_url() .'"><img alt="'. esc_attr( get_bloginfo( 'name' ) ) .'" title="'. esc_attr( get_bloginfo( 'name' ) ) .'" class="header-image" src="' . esc_url( get_header_image() ) . '" /></a>';
-						} else { ?>
-							<h1 class="site-title"><a title="<?php bloginfo( 'name' ); ?>" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-						<?php } ?>
+						
 					
 					<!-- full width slider -->	
 					<?php 
