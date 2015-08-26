@@ -908,10 +908,10 @@ body {
 /* smaller footer text */
 .site-info { font-size: 13px; }
 
-/* less whitespace */
+/* less whitespace 
 .entry-content { margin-top: 0px; }
 .type-page .entry-title, .entry-title { margin: 0px; }
-.hentry { margin-top: 25px!important; }
+.hentry { margin-top: 25px!important; } */
 
 /* remove title from homepage */
 .page-id-64 .entry-header .h1 {
