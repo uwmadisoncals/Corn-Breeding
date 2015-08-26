@@ -43,6 +43,9 @@
 				<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
 				
 			</nav><!-- #site-navigation -->
+			 
+			 <!-- breadcrumbs -->
+			 <?php if(function_exists(simple_breadcrumb)) {simple_breadcrumb();} ?>
 
 
 		<div class="menu-mobile">
