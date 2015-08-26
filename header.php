@@ -45,7 +45,7 @@
 			</nav><!-- #site-navigation -->
 			 
 			 <!-- breadcrumbs -->
-			 <?php if(function_exists(simple_breadcrumb)) {simple_breadcrumb();} ?>
+			 <?php if(function_exists(simple_breadcrumb) && !is_front_page()) {simple_breadcrumb();} ?>
 
 
 		<div class="menu-mobile">
