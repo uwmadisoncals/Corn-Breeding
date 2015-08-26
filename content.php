@@ -21,8 +21,7 @@
 
 	<header class="entry-header">
 			 
-		<!-- breadcrumbs -->
-			 <?php if(function_exists(simple_breadcrumb) && !is_front_page()) {simple_breadcrumb();} ?>
+		
 			 
 		<div class="post-symbol">
 			<i title="<?php echo _e('Standard Post', 'gravit') ?>" class="fa fa-thumb-tack"></i>

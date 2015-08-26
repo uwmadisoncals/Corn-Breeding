@@ -12,6 +12,7 @@
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title><?php wp_title( '|', true, 'right' ); ?></title>
+<link href='http://fonts.googleapis.com/css?family=Cantarell:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
@@ -26,7 +27,7 @@
 		<div class="site-branding">
 			<?php if ( get_bloginfo( 'description' ) ) { ?>				
 				<h2 class="description">
-					<a href="'. home_url() .'"><?php bloginfo( 'description' ); ?></a>
+					<a href="<?php bloginfo('url'); ?>"><?php bloginfo( 'description' ); ?></a>
 				</h2>				
 			<?php } ?>
 			<?php //show title or Header image
@@ -42,7 +43,12 @@
 				<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
 				
 			</nav><!-- #site-navigation -->
-
+			 
+			 
+			 <!-- full width slider -->	
+					<?php if ( is_home() ):?>
+    					echo do_shortcode("[metaslider id=360]"); 
+					<?php endif; ?>
 
 		<div class="menu-mobile">
 			<div class="site-branding-mobile">
@@ -52,7 +58,7 @@
 						} else { ?>
 							<h1 class="site-title"><a title="<?php bloginfo( 'name' ); ?>" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 						<?php } ?>
-					
+						
 			</div>
 
 	  				<div id="menu-toggle">
