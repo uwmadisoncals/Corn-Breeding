@@ -911,6 +911,7 @@ body {
 /* less whitespace */
 .entry-content { margin-top: 0px; }
 .type-page .entry-title, .entry-title { margin: 0px; }
+.hentry { margin-top: 25px; }
 
 
 
