@@ -27,7 +27,7 @@
 		<div class="site-branding">
 			<?php if ( get_bloginfo( 'description' ) ) { ?>				
 				<h2 class="description">
-					<a href="'. home_url() .'"><?php bloginfo( 'description' ); ?></a>
+					<a href="<?php bloginfo('url'); ?>"><?php bloginfo( 'description' ); ?></a>
 				</h2>				
 			<?php } ?>
 			<?php //show title or Header image
@@ -43,7 +43,12 @@
 				<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
 				
 			</nav><!-- #site-navigation -->
-
+			 
+			 
+			 <!-- full width slider -->	
+					<?php if ( is_home() ):?>
+    					echo do_shortcode("[metaslider id=360]"); 
+					<?php endif; ?>
 
 		<div class="menu-mobile">
 			<div class="site-branding-mobile">
@@ -53,7 +58,7 @@
 						} else { ?>
 							<h1 class="site-title"><a title="<?php bloginfo( 'name' ); ?>" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 						<?php } ?>
-					
+						
 			</div>
 
 	  				<div id="menu-toggle">
@@ -72,6 +77,8 @@
 				</h2>				
 			<?php } ?>
 
+			<!-- breadcrumbs -->
+			 <?php if(function_exists(simple_breadcrumb) && !is_front_page()) {simple_breadcrumb();} ?>
 					
 	  	</div>
 

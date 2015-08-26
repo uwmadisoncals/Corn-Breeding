@@ -78,7 +78,7 @@
 			<?php } ?>
 
 			<!-- breadcrumbs -->
-			 <?php if(function_exists(simple_breadcrumb) && !is_front_page()) {simple_breadcrumb();} ?>
+			 <?php if(function_exists(simple_breadcrumb) && !is_front_page()) {simple_breadcrumb();} ?>breadcrumbs
 					
 	  	</div>
 
