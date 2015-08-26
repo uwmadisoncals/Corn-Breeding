@@ -27,7 +27,7 @@
 		<div class="site-branding">
 			<?php if ( get_bloginfo( 'description' ) ) { ?>				
 				<h2 class="description">
-					<a href="'. home_url() .'"><?php bloginfo( 'description' ); ?></a>
+					<a href="<?php bloginfo('url'); ?>"><?php bloginfo( 'description' ); ?></a>
 				</h2>				
 			<?php } ?>
 			<?php //show title or Header image
