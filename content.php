@@ -21,7 +21,6 @@
 
 	<header class="entry-header">
 			 
-		testing
 			 
 		<div class="post-symbol">
 			<i title="<?php echo _e('Standard Post', 'gravit') ?>" class="fa fa-thumb-tack"></i>

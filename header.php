@@ -43,7 +43,9 @@
 				<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
 				
 			</nav><!-- #site-navigation -->
-			 
+			
+			 <!-- breadcrumbs -->
+			 <?php if(function_exists(simple_breadcrumb) && !is_front_page()) {simple_breadcrumb();} ?> test
 			 
 			 <!-- full width slider -->	
 					<?php if ( is_home() ):?>
@@ -77,8 +79,7 @@
 				</h2>				
 			<?php } ?>
 
-			<!-- breadcrumbs -->
-			 <?php if(function_exists(simple_breadcrumb) && !is_front_page()) {simple_breadcrumb();} ?>breadcrumbs
+			
 					
 	  	</div>
 
