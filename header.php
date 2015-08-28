@@ -52,9 +52,7 @@
     					echo do_shortcode("[metaslider id=360]"); 
 					<?php endif; ?>
 					
-					<?php 
-    					echo do_shortcode("[metaslider id=360]"); 
-					?>
+					
 
 		<div class="menu-mobile">
 			<div class="site-branding-mobile">
