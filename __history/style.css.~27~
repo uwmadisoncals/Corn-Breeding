@@ -908,6 +908,22 @@ body {
 /* smaller footer text */
 .site-info { font-size: 13px; }
 
+/* less whitespace */
+.entry-content { margin-top: 0px; }
+.type-page .entry-title, .entry-title { margin: 0px; }
+.hentry { margin-top: 25px!important; }
+
+/* remove title from homepage */
+.page-id-64 h1.entry-title {
+display: none;
+}
+
+/* smaller fonts */
+div.entry-header h1.title { font-size: 40px; }
+div.entry-content h1.title { font-size: 30px; }
+div.entry-content h2 { font-size: 24px; }
+div.entry-content p, div.content p { font-size: 15px; }
+
 
 
 
