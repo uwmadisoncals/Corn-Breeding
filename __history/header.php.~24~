@@ -43,12 +43,16 @@
 				<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
 				
 			</nav><!-- #site-navigation -->
-			 
+			
+			 <!-- breadcrumbs -->
+			 <?php if(function_exists(simple_breadcrumb) && !is_front_page()) {simple_breadcrumb();} ?>
 			 
 			 <!-- full width slider -->	
-					<?php if ( is_home() ):?>
+					<?php if ( is_front_page() ):?>
     					echo do_shortcode("[metaslider id=360]"); 
 					<?php endif; ?>
+					
+					
 
 		<div class="menu-mobile">
 			<div class="site-branding-mobile">
@@ -77,8 +81,7 @@
 				</h2>				
 			<?php } ?>
 
-			<!-- breadcrumbs -->
-			 <?php if(function_exists(simple_breadcrumb) && !is_front_page()) {simple_breadcrumb();} ?>breadcrumbs
+			
 					
 	  	</div>
 
