@@ -903,7 +903,7 @@ body {
 }
 
 /* move breadcrumbs over */
-.breadcrumb { width: 1000px!important; margin: auto!important; }
+.breadcrumb { width: 1000px!important; margin: auto!important; margin-top: 15px; }
 
 /* smaller footer text */
 .site-info { font-size: 13px; }
