@@ -21,6 +21,8 @@
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
+<?php wp_reset_query(); ?>
+
 <?php wp_footer(); ?>
 
 </body>
