@@ -918,6 +918,11 @@ body {
 display: none;
 }
 
+/* smaller fonts */
+div.entry-header h1.title { font-size: 40px; }
+div.entry-content h1.title { font-size: 30px; }
+div.content p { font-size: 14px; }
+
 
 
 
