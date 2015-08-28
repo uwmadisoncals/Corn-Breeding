@@ -48,6 +48,7 @@
 			 <?php if(function_exists(simple_breadcrumb) && !is_front_page()) {simple_breadcrumb();} ?>
 			 
 			 <!-- full width slider -->	
+					<?php wp_reset_query(); ?>
 					<?php if ( is_home() ):?>
     					echo do_shortcode("[metaslider id=360]"); 
 					<?php endif; ?>
