@@ -50,7 +50,7 @@
 			 <!-- full width slider -->
 			 <?php if ( is_page( 'home' )) echo do_shortcode ("[metaslider id=360]"); ?>
 					
-					
+			<a name="top"></a>
 
 		<div class="menu-mobile">
 			<div class="site-branding-mobile">
