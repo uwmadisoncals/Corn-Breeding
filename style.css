@@ -926,7 +926,14 @@ div.entry-content p, div.entry-content a, div.entry-content ul, div.entry-conten
 div.content p, div.content ol, div.content ul, div.content li, div.content a { font-size: 15px; }
 
 
+/* fix anchor link positioning */
 
+.anchor{
+   display:block;
+   height:63px; /* this is the height of your header */
+   margin-top:-63px; /* this is again negative value of the height of your header */
+   visibility:hidden;
+}
 
 
 
