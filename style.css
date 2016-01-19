@@ -939,6 +939,7 @@ div.content p, div.content ol, div.content ul, div.content li, div.content a { f
 @media only screen and (max-device-width: 480px) {
   /* define mobile specific styles come here */
   h2.description a {font-size: 12px;}
+  .site-branding {background-color: #ffffff;}
 }
 
 
