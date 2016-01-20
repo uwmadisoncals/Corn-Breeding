@@ -940,6 +940,8 @@ div.content p, div.content ol, div.content ul, div.content li, div.content a { f
   /* define mobile specific styles come here */
   .description a{font-size: 14px;}
   .site-branding {background-color: #ffffff;}
+  .menu-mobile .site-branding-mobile {background-color: #ffffff;}
+  .menu-mobile .site-branding-mobile .site-title {font-size: 14px;}
   
 }
 
