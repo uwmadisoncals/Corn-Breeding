@@ -938,8 +938,12 @@ div.content p, div.content ol, div.content ul, div.content li, div.content a { f
 
 @media only screen and (max-device-width: 480px) {
   /* define mobile specific styles come here */
-  h2.description a {font-size: 12px;}
+  .description a {font-size: 15px!important;}
+  .description {font-size: 15px!important;}
   .site-branding {background-color: #ffffff;}
+  .menu-mobile .site-branding-mobile, .menu-mobile {background-color: #ffffff!important;}
+  .menu-mobile .site-branding-mobile .site-title {font-size: 15px!important;}
+  .menu-mobile .site-branding-mobile {font-size: 15px!important;}
 }
 
 
